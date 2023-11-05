@@ -35,6 +35,7 @@
             txtB = new TextBox();
             label3 = new Label();
             txtResult = new TextBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label2
@@ -95,11 +96,22 @@
             txtResult.Size = new Size(100, 23);
             txtResult.TabIndex = 2;
             // 
+            // button1
+            // 
+            button1.Location = new Point(417, 338);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 3;
+            button1.Text = "Cộng";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += btPlus_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(btPlus);
             Controls.Add(txtResult);
             Controls.Add(label3);
@@ -122,5 +134,6 @@
         private TextBox txtB;
         private Label label3;
         private TextBox txtResult;
+        private Button button1;
     }
 }
