@@ -61,6 +61,7 @@
             btPlus.TabIndex = 3;
             btPlus.Text = "Cộng";
             btPlus.UseVisualStyleBackColor = true;
+            btPlus.Click += btPlus_Click;
             // 
             // label1
             // 
